@@ -92,6 +92,63 @@ h1.section-title:after {
     background-color: black !important;
 }
 
+.footer-copyright {
+    padding-bottom: 5px;
+    line-height: 2;
+}
+
+.footer-copyright i.material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(.7, .7, .7);
+        transform: scale3d(.7, .7, .7);
+        }
+    50% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    to {
+        -webkit-transform: scale3d(.7, .7, .7);
+        transform: scale3d(.7, .7, .7);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(.7, .7, .7);
+        transform: scale3d(.7, .7, .7);
+    }
+    50% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    to {
+        -webkit-transform: scale3d(.7, .7, .7);
+        transform: scale3d(.7, .7, .7);
+    }
+}
+
 @media (max-aspect-ratio: 16/9) {
     .slides li img {
         width: 100%;
