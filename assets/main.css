@@ -13,10 +13,15 @@ nav {
 
 #nav-mobile > li > a {
     font-size: 1.3rem;
+    height: 50px;
 }
 
 #page-title {
     font-size: 2rem;
+}
+
+#dropdown {
+    width: auto !important;
 }
 
 main {
