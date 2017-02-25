@@ -4,4 +4,5 @@ title: About
 permalink: /about/
 ---
 
-We are cool.
+# About
+We are a small team of cool people.

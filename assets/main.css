@@ -2,6 +2,11 @@ body {
     font-weight: 300;
 }
 
+nav {
+    height: 50px;
+    line-height: 50px;
+}
+
 .navbar {
     padding: 0 2%;
 }
