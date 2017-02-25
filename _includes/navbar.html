@@ -1,0 +1,12 @@
+<nav class="blue darken-4">
+    <div class="navbar">
+        <a id="page-title" class="left white-text" href="{{ '/' | relative_url }}">AIM Robotics</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {% for the_page in site.pages %}
+            {% if the_page.title %}
+            <li class="{% if the_page.permalink == page.permalink %}active{% endif %}"><a href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul> 
+    </div>
+</nav>

@@ -1,0 +1,19 @@
+body {
+    font-weight: 300;
+}
+
+.navbar {
+    padding: 0 2%;
+}
+
+#nav-mobile > li > a {
+    font-size: 1.3rem;
+}
+
+#page-title {
+    font-size: 2rem;
+}
+
+main {
+    margin: 60px 0;
+}

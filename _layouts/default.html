@@ -5,11 +5,19 @@
     {% include head.html %}
 
     <body>
-        <div class="page-wrapper">
-            <main class="content">
+
+        {% if page.use_hero %}
+        {% include hero-header.html %}
+        {% else %}
+        {% include navbar.html %}
+        {% endif %}
+
+        <main>
+            <div class="container">
                 {{ content }}
-            </main>
-        </div>
+            </div>
+        </main>
+
     </body>
 
 </html>
