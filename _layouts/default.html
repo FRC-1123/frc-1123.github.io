@@ -6,10 +6,10 @@
 
     <body>
 
+        {% include navbar.html %}
+
         {% if page.use_hero %}
         {% include hero.html %}
-        {% else %}
-        {% include navbar.html %}
         {% endif %}
 
         <main>

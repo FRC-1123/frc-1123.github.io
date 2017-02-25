@@ -5,7 +5,7 @@
     {% endif %}
     {% endfor %}
 </ul>
-<nav class="blue darken-4">
+<nav class="{% if page.use_hero %}black{% else %}blue darken-4{% endif %}">
     <div class="navbar">
         <a id="page-title" class="left white-text" href="{{ '/' | relative_url }}">AIM Robotics</a>
         <ul id="nav-mobile" class="right">

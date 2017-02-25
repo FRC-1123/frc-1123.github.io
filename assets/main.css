@@ -27,7 +27,7 @@ nav {
 .carousel.carousel-slider .carousel-item img {
     opacity: 0.5;
     filter: alpha(opacity=50);
-    height: 100vh;
+    height: calc(100vh - 50px);
     max-width: 100%;
     width: auto;
 }
