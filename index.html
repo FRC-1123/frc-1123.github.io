@@ -1,0 +1,16 @@
+---
+layout: default
+use_hero: true
+---
+
+<h1 id="news" class="center section-title">News</h1>
+{% for post in site.posts %}
+<div id="news-div">
+    <a href="{{ post.url }}">
+        <div class="card-panel">
+            <h4>{{ post.title }}</h4>
+            <p class="black-text">{{ post.excerpt }}</p>
+        </div>
+    </a>
+</div>
+{% endfor %}
