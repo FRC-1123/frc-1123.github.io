@@ -24,6 +24,30 @@ nav {
     width: auto !important;
 }
 
+.carousel.carousel-slider .carousel-item img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    height: 100vh;
+    max-width: 100%;
+    width: auto;
+}
+
+.carousel.carousel-slider .carousel-item {
+    background-color: black;
+}
+
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 30vh;
+}
+
+#hero-intro-text {
+    font-size: 5rem;
+}
+
+#hero-title {
+    font-size: 6rem;
+}
+
 main {
     margin: 60px 0;
 }

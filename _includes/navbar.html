@@ -1,7 +1,7 @@
 <ul id="dropdown" class="dropdown-content">
     {% for the_page in site.pages %}
     {% if the_page.title %}
-    <li><a href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
+    <li><a class="teal-text text-darken-3" href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
     {% endif %}
     {% endfor %}
 </ul>
