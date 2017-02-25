@@ -77,10 +77,13 @@ main {
         width: 100%;
         height: auto;
     }
+    .slider-text {
+        bottom: 40%;
+    }
     #hero-intro-text {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     #hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
