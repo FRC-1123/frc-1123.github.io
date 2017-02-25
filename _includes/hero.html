@@ -1,8 +1,10 @@
-<div class="carousel carousel-slider">
-    <div class="carousel-fixed-item center white-text"><span id="hero-intro-text">We are</span><br><span id="hero-title">AIM Robotics</span></div>
-    {% for image in site.static_files %}
-    {% if image.path contains 'img/carousel' %}
-    <a class="carousel-item center"><img src="{{ image.path | relative_url }}" alt="carousel"></a>
-    {% endif %}
-    {% endfor %}
+<div class="slider">
+    <div class="slider-text center white-text"><span id="hero-intro-text">We are</span><br><span id="hero-title">AIM Robotics</span></div>
+    <ul class="slides">
+        {% for image in site.static_files %}
+        {% if image.path contains 'img/slider' %}
+        <li><img src="{{ image.path | relative_url }}" alt="slider"></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 </div>

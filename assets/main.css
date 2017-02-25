@@ -24,23 +24,40 @@ nav {
     width: 10rem !important;
 }
 
-.carousel.carousel-slider .carousel-item {
-    height: calc(100vh - 50px);
+.slider {
+    height: calc(100vh - 50px) !important;
+    background-color: black;
 }
 
-.carousel.carousel-slider .carousel-item img {
+.slides {
+    height: calc(100vh - 80px) !important;
+}
+
+.slides li {
+    background-color: black;
+}
+
+.slides li img {
     opacity: 0.5;
     filter: alpha(opacity=50);
     height: 100%;
     width: auto;
 }
 
-.carousel.carousel-slider .carousel-item {
-    background-color: black;
+.slider-text {
+    position: absolute;
+    z-index: 10;
+    bottom: 30%;
+    left: 0;
+    right: 0;
 }
 
-.carousel.carousel-slider .carousel-fixed-item.with-indicators {
-    bottom: 30%;
+.slider .indicators .indicator-item {
+    background-color: #666;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: white;
 }
 
 #hero-intro-text {
@@ -56,7 +73,7 @@ main {
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .carousel.carousel-slider .carousel-item img {
+    .slides li img {
         width: 100%;
         height: auto;
     }
