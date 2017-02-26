@@ -14,6 +14,8 @@ $(document).ready(function() {
     $navbar = $(".fade-color-nav");
     $window.scroll(function() {
         var frac = $window.scrollTop() / $window.height();
+        if (frac > 1)
+            frac = 1;
         $navbar.css("background-color", "rgb(" + Math.round(13*frac).toString() + ", " + Math.round(71*frac).toString() + ", " + Math.round(161*frac).toString() + ")");
     });
 
