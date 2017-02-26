@@ -116,6 +116,14 @@ h1.section-title:after {
     margin-top: 30px;
 }
 
+.prev-next-divider {
+    margin-top: 70px;
+}
+
+.prev-next-div i {
+    font-size: 3rem;
+}
+
 .footer-copyright {
     padding-bottom: 5px;
     line-height: 2;

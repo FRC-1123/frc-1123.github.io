@@ -6,5 +6,10 @@ layout: default
 {{ page.date | date: "%B %-d, %Y" }}
 <br>
 <br>
-<br>
 {{ content }}
+
+<div class="divider prev-next-divider"></div>
+<div class="section row prev-next-div">
+    <a class="col s4 m3 l2 offset-s1 offset-m2 offset-l3 waves-effect waves-light btn{% unless page.previous.url %} disabled{% endunless %}" href="{{ page.previous.url }}"><i class="material-icons">keyboard_arrow_left</i></a>
+    <a class="col s4 m3 l2 offset-s2 offset-m2 offset-l2 waves-effect waves-light btn{% unless page.next.url %} disabled{% endunless %}" href="{{ page.next.url }}"><i class="material-icons">keyboard_arrow_right</i></a>
+</div>
