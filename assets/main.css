@@ -63,6 +63,10 @@ main {
     max-height: 50vh;
 }
 
+.post-content {
+    font-family: "Lora", serif;
+}
+
 .prev-next-divider {
     margin-top: 70px;
 }
