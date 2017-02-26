@@ -128,7 +128,7 @@ main {
 
 .underline:after {
     width: 22rem !important;
-    max-width: 70%;
+    max-width: 90%;
     background-color: black !important;
 }
 
