@@ -9,6 +9,7 @@ use_hero: true
     <a href="{{ post.url }}">
         <div class="card-panel">
             <h4>{{ post.title }}<i class="material-icons right">open_in_new</i></h4>
+            <span class="grey-text">{{ post.date | date: "%B %-d, %Y" }}</span>
             <p class="black-text">{{ post.excerpt }}</p>
         </div>
     </a>
