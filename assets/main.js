@@ -3,6 +3,11 @@ $(document).ready(function() {
 
     $(".slider").slider({interval: 5000});
 
+    $("#hero-title.typed").typed({
+        strings: ["AIM Robotics"],
+        typeSpeed: 120,
+    });
+
     $window = $(window);
     $navbar = $(".fade-color-nav");
     $window.scroll(function() {

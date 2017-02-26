@@ -55,7 +55,7 @@ nav {
 .slider-text {
     position: absolute;
     z-index: 10;
-    bottom: 35%;
+    bottom: 30%;
     left: 0;
     right: 0;
 }
@@ -79,6 +79,32 @@ nav {
 
 #hero-title {
     font-size: 6rem;
+}
+
+.typed-cursor{
+    font-size: 8rem;
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 main {
@@ -183,12 +209,15 @@ h1.section-title:after {
 
 @media (max-width: 600px) {
     .slider-text {
-        bottom: 50%;
+        bottom: 45%;
     }
     #hero-intro-text {
         font-size: 3rem;
     }
     #hero-title {
         font-size: 3.5rem;
+    }
+    .typed-cursor{
+        font-size: 4.5rem;
     }
 }
