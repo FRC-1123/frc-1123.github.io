@@ -3,15 +3,24 @@ layout: default
 use_hero: true
 ---
 
-<h1 id="news" class="center to-underline">News</h1>
-{% for post in site.posts %}
-<div id="news-div">
-    <a href="{{ post.url }}">
-        <div class="card-panel">
-            <h4>{{ post.title }}<i class="material-icons right">open_in_new</i></h4>
-            <span class="grey-text">{{ post.date | date: "%B %-d, %Y" }}</span>
-            <p class="black-text">{{ post.excerpt }}</p>
-        </div>
-    </a>
+<div class="section">
+    <h1 id="intro" class="center to-underline">Intro</h1>
+    <p>Autodidactic Intelligent Minors (Team #1123) is a dedicated group of students, families, and mentors teamed up together to participate in the FIRST Foundation's robotics competition. Our team is unique because we are a community-based team. AIM offers an opportunity for any student to participate regardless of their school affiliation.</p>
 </div>
-{% endfor %}
+
+<div class="divider"></div>
+
+<div class="section">
+    <h1 id="news" class="center to-underline">News</h1>
+    {% for post in site.posts %}
+    <div id="news-div">
+        <a href="{{ post.url }}">
+            <div class="card-panel">
+                <h4>{{ post.title }}<i class="material-icons right">open_in_new</i></h4>
+                <span class="grey-text">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <p class="black-text">{{ post.excerpt }}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

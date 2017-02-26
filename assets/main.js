@@ -21,7 +21,8 @@ $(document).ready(function() {
     sr.reveal("#news-div .card-panel", {viewFactor: 0.3, duration: 1000});
 
     var options = [
-        {selector: ".to-underline", offset: 150, callback: underline}
+        {selector: "#intro.to-underline", offset: 100, callback: underline},
+        {selector: "#news.to-underline", offset: 100, callback: underline}
     ];
     Materialize.scrollFire(options);
 });
