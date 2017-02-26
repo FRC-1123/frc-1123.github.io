@@ -8,6 +8,8 @@ $(document).ready(function() {
         typeSpeed: 120,
     });
 
+    $(".parallax").parallax();
+
     $window = $(window);
     $navbar = $(".fade-color-nav");
     $window.scroll(function() {

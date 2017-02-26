@@ -7,6 +7,10 @@ permalink: "/about/"
 
 <h1 class="center to-underline">About</h1>
 
+<div class="parallax-container">
+    <div class="parallax"><img src="{{ '/assets/img/about.jpg' | relative_url }}"></div>
+</div>
+
 ### History
 FRC Team 1123, AIM Robotics, was founded in 2003 by a group of home school families who desired to give their students an educational experience of a life time. Thus, we pride ourselves in accepting students of all ages, all education levels, and all experience levels. Unlike some teams that attend only set events every year, we make ourselves open to many possibilities. In our last eight years of attending regional competitions, we have gone to the VCU/NASA Richmond Regional three times, the Annapolis Regional three times, and the DC Regional two times. We also go to a multitude of off season competitions, including the Maryland state fair, the York, the Pennsylvania Summer Frenzy (hosted by team 225), and all of the Robot Rumbles in the Virginia State Fair since its inception in 2006.
 
