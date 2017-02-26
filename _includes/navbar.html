@@ -1,10 +1,10 @@
 <ul id="dropdown" class="dropdown-content">
     {% for the_page in site.pages %}
     {% if the_page.title %}
-    <li><a class="teal-text text-darken-3" href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
+    <li><a class="light-blue-text text-accent-4" href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
     {% endif %}
     {% endfor %}
-    <li><a class="teal-text text-darken-3" href="https://github.com/FRC-1123">GitHub</a></li>
+    <li><a class="light-blue-text text-accent-4" href="https://github.com/FRC-1123">GitHub</a></li>
 </ul>
 <div class="navbar-fixed">
     <nav class="{% if page.use_hero %}fade-color-nav{% else %}blue darken-4{% endif %}">
