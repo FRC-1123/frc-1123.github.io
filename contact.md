@@ -4,5 +4,7 @@ title: Contact Us
 permalink: /contact/
 ---
 
-# Contact Us
+
+<h1 class="center">Contact Us</h1>
+
 Want to join AIM Robotics, or just want to chat? [Send us an email!](mailto:{{ site.email }})
