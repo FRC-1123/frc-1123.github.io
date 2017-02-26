@@ -138,6 +138,19 @@ main {
     text-align: justify;
 }
 
+.promo-table {
+    margin-top: 40px;
+}
+
+.promo-table i {
+    font-size: 4rem;
+}
+
+.promo-table p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 #news-div {
     margin-left: auto;
     margin-right: auto;
