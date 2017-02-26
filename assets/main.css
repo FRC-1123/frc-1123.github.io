@@ -55,7 +55,7 @@ nav {
 .slider-text {
     position: absolute;
     z-index: 10;
-    bottom: 30%;
+    bottom: 35%;
     left: 0;
     right: 0;
 }
@@ -173,13 +173,9 @@ h1.section-title:after {
     }
 }
 
-@media (max-aspect-ratio: 16/9) {
-    .slides li img {
-        width: 100%;
-        height: auto;
-    }
+@media (max-width: 600px) {
     .slider-text {
-        bottom: 40%;
+        bottom: 50%;
     }
     #hero-intro-text {
         font-size: 3rem;
