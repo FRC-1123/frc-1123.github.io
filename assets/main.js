@@ -35,11 +35,5 @@ function underline(el) {
 }
 
 function zoomPromo(el) {
-    var sequence = [];
-    var child = el.firstChild;
-    for (var i=0; i<3; i++) {
-        sequence.push({e: $(child), p: {scale: 1.1, opacity: 1}, o: {duration: 300}});
-        child = child.nextSibling;
-    }
-    $.Velocity.RunSequence(sequence);
+    $(".promo-table .col").velocity("transition.slideUpIn", {stagger: 200});
 }
