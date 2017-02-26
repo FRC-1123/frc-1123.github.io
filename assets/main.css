@@ -142,12 +142,15 @@ main {
     margin-top: 40px;
 }
 
+.promo-table .col {
+    opacity: 0;
+}
+
 .promo-table i {
     font-size: 4rem;
 }
 
 .promo-table p {
-    font-size: 1.2rem;
     font-weight: 400;
 }
 

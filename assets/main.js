@@ -24,11 +24,22 @@ $(document).ready(function() {
 
     var options = [
         {selector: "#intro.to-underline", offset: 100, callback: underline},
-        {selector: "#news.to-underline", offset: 100, callback: underline}
+        {selector: "#news.to-underline", offset: 100, callback: underline},
+        {selector: ".promo-table", offset: 100, callback: zoomPromo},
     ];
     Materialize.scrollFire(options);
 });
 
 function underline(el) {
     $(el).addClass("underline");
+}
+
+function zoomPromo(el) {
+    var sequence = [];
+    var child = el.firstChild;
+    for (var i=0; i<3; i++) {
+        sequence.push({e: $(child), p: {scale: 1.1, opacity: 1}, o: {duration: 300}});
+        child = child.nextSibling;
+    }
+    $.Velocity.RunSequence(sequence);
 }
