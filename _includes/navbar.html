@@ -7,7 +7,7 @@
     <li><a class="light-blue-text text-accent-4" href="https://github.com/FRC-1123">GitHub</a></li>
 </ul>
 <div class="navbar-fixed">
-    <nav class="{% if page.use_hero %}fade-color-nav{% else %}blue darken-4{% endif %}">
+    <nav class="{% if page.is_index %}fade-color-nav{% else %}blue darken-4{% endif %}">
         <div class="navbar">
             <a id="page-title" class="left white-text" href="{{ '/' | relative_url }}">AIM Robotics</a>
             <ul id="nav-mobile" class="right">

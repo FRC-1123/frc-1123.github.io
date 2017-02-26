@@ -2,13 +2,17 @@
 
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+    {% if page.is_index %}
+    {% include index-head.html %}
+    {% else %}
     {% include head.html %}
+    {% endif %}
 
     <body>
 
         {% include navbar.html %}
 
-        {% if page.use_hero %}
+        {% if page.is_index %}
         {% include hero.html %}
         {% endif %}
 
