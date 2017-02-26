@@ -112,11 +112,11 @@ main {
     min-height: calc(100vh - 209px);
 }
 
-h1.section-title {
+.to-underline {
     padding-bottom: 3px;
 }
 
-h1.section-title:after {
+.to-underline:after {
     content: '';
     display: block;
     margin: 0 auto;
@@ -127,7 +127,7 @@ h1.section-title:after {
 }
 
 .underline:after {
-    width: 20rem !important;
+    width: 22rem !important;
     max-width: 70%;
     background-color: black !important;
 }
