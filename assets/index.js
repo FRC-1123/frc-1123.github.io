@@ -1,12 +1,12 @@
 $(document).ready(function() {
+    $(".dropdown-button").dropdown({hover: false});
+
     $(".slider").slider({interval: 5000});
 
     $("#hero-title.typed").typed({
         strings: ["AIM Robotics"],
         typeSpeed: 120,
     });
-
-    $(".parallax").parallax();
 
     $window = $(window);
     $navbar = $(".fade-color-nav");
