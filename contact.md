@@ -8,3 +8,5 @@ permalink: /contact/
 <h1 class="center to-underline">Contact Us</h1>
 
 Want to join AIM Robotics, or just want to chat? [Send us an email!](mailto:{{ site.email }})
+
+<iframe width="600" height="350" frameborder="0" style="border:0;width:100%;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC-JvENrp1A8grQ6j2B825vNj3FG7DHndU&q=AIM+Robotics+Campus,Fairfax+VA" allowfullscreen></iframe>
