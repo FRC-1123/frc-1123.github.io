@@ -3,6 +3,13 @@ $(document).ready(function() {
 
     $(".slider").slider({interval: 5000});
 
+    $window = $(window);
+    $navbar = $(".fade-color-nav");
+    $window.scroll(function() {
+        var frac = $window.scrollTop() / $window.height();
+        $navbar.css("background-color", "rgb(" + Math.round(13*frac).toString() + ", " + Math.round(71*frac).toString() + ", " + Math.round(161*frac).toString() + ")");
+    });
+
     var sr = ScrollReveal();
     sr.reveal("#news-div .card-panel", {viewFactor: 0.3, duration: 1000});
 
