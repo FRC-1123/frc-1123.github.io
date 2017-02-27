@@ -63,6 +63,31 @@ main {
     max-height: 50vh;
 }
 
+#members .name {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#members .divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #members h3 {
+        margin-left: 3vw;
+    }
+    #members .col {
+        padding: 2vw 4vw;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    #members h3 {
+        margin-left: 8vw;
+    }
+}
+
 .post-content {
     font-family: "Lora", serif;
 }
