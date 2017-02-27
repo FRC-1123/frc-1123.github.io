@@ -11,42 +11,20 @@ permalink: /members/
     <div class="section">
         <h3>Current</h3>
         <div class="row">
+            {% for member in site.data.current_members %}
             <div class="col s10 m6 l4 offset-s1">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="{{ '/assets/img/members/charlesz.jpg' | relative_url }}">
+                        <img src="{{ '/assets/img/members/' | relative_url }}{{ member.image }}">
                     </div>
                     <div class="card-content">
-                        <p class="name">Charles Zhao</p>
-                        <p>Student</p>
-                        <p>2017 - Present</p>
+                        <p class="name">{{ member.name }}</p>
+                        <p>{{ member.status }}</p>
+                        <p>{{ member.years }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col s10 m6 l4 offset-s1">
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="{{ '/assets/img/members/charlesz.jpg' | relative_url }}">
-                    </div>
-                    <div class="card-content">
-                        <p class="name">Charles Zhao</p>
-                        <p>Student</p>
-                        <p>2017 - Present</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s10 m6 l4 offset-s1">
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="{{ '/assets/img/members/charlesz.jpg' | relative_url }}">
-                    </div>
-                    <div class="card-content">
-                        <p class="name">Charles Zhao</p>
-                        <p>Student</p>
-                        <p>2017 - Present</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
@@ -55,42 +33,20 @@ permalink: /members/
     <div class="section">
         <h3>Past</h3>
         <div class="row">
+            {% for member in site.data.past_members %}
             <div class="col s10 m6 l4 offset-s1">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="{{ '/assets/img/members/charlesz.jpg' | relative_url }}">
+                        <img src="{{ '/assets/img/members/' | relative_url }}{{ member.image }}">
                     </div>
                     <div class="card-content">
-                        <p class="name">Charles Zhao</p>
-                        <p>Student</p>
-                        <p>2017 - Present</p>
+                        <p class="name">{{ member.name }}</p>
+                        <p>{{ member.status }}</p>
+                        <p>{{ member.years }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col s10 m6 l4 offset-s1">
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="{{ '/assets/img/members/charlesz.jpg' | relative_url }}">
-                    </div>
-                    <div class="card-content">
-                        <p class="name">Charles Zhao</p>
-                        <p>Student</p>
-                        <p>2017 - Present</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s10 m6 l4 offset-s1">
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="{{ '/assets/img/members/charlesz.jpg' | relative_url }}">
-                    </div>
-                    <div class="card-content">
-                        <p class="name">Charles Zhao</p>
-                        <p>Student</p>
-                        <p>2017 - Present</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

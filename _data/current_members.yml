@@ -1,0 +1,14 @@
+- name: "Charles Zhao"
+  status: "Student"
+  years: "2017"
+  image: "charlesz.jpg"
+
+- name: "Charles Zhao"
+  status: "Student"
+  years: "2017"
+  image: "charlesz.jpg"
+
+- name: "Test"
+  status: "Mentor"
+  years: "2017"
+  image: "charlesz.jpg"
