@@ -161,19 +161,12 @@ main {
 }
 
 #news-div .card-panel {
+    visibility: hidden;
     margin-top: 30px;
 }
 
 .parallax-container {
     max-height: 50vh;
-}
-
-.prev-next-divider {
-    margin-top: 70px;
-}
-
-.prev-next-div i {
-    font-size: 3rem;
 }
 
 .footer-copyright {

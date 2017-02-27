@@ -63,6 +63,10 @@ main {
     max-height: 50vh;
 }
 
+#members .card {
+    visibility: hidden;
+}
+
 #members .name {
     font-size: 1.3rem;
     font-weight: 400;
