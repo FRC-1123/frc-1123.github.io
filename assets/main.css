@@ -63,6 +63,11 @@ main {
     max-height: 50vh;
 }
 
+#calendar {
+    width: 100%;
+    max-height: 120vw;
+}
+
 #members .card {
     visibility: hidden;
 }
