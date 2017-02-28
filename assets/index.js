@@ -26,8 +26,8 @@ $(document).ready(function() {
     sr.reveal("#news-div .card-panel", {scale: "0.95"});
 
     var options = [
-        {selector: "#intro.to-underline", offset: 100, callback: underline},
         {selector: "#news.to-underline", offset: 100, callback: underline},
+        {selector: "#sponsors.to-underline", offset: 100, callback: underline},
         {selector: ".promo-table", offset: 100, callback: zoomPromo},
     ];
     Materialize.scrollFire(options);

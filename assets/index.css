@@ -142,10 +142,6 @@ main {
     text-align: justify;
 }
 
-.promo-table {
-    margin-top: 40px;
-}
-
 .promo-table .col {
     opacity: 0;
 }
@@ -157,6 +153,10 @@ main {
 .promo-table p {
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.sponsors-div img {
+    width: 100%;
 }
 
 #news-div {
