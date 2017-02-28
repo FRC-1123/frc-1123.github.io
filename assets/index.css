@@ -1,7 +1,10 @@
 body {
     font-weight: 300;
     font-size: 1.1rem;
-    line-height: 1.7;
+}
+
+p {
+    line-height: 1.9;
 }
 
 .navbar-fixed {
@@ -76,10 +79,12 @@ nav {
 
 #hero-intro-text {
     font-size: 5rem;
+    line-height: 1rem;
 }
 
 #hero-title {
     font-size: 6rem;
+    line-height: 1rem;
 }
 
 .typed-cursor{

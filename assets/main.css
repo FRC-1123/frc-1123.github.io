@@ -1,7 +1,10 @@
 body {
     font-weight: 300;
     font-size: 1.1rem;
-    line-height: 1.7;
+}
+
+p {
+    line-height: 1.9;
 }
 
 .navbar-fixed {
@@ -61,6 +64,7 @@ main {
 
 .parallax-container {
     max-height: 50vh;
+    margin-bottom: 40px;
 }
 
 #calendar {
@@ -72,9 +76,13 @@ main {
     visibility: hidden;
 }
 
-#members .name {
+#members .card p {
+    line-height: 1.5;
+}
+
+#members .card .name {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #members .divider {
@@ -99,6 +107,7 @@ main {
 
 .post-content {
     font-family: "Lora", serif;
+    font-size: 1.2rem;
 }
 
 .prev-next-divider {
