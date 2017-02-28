@@ -32,13 +32,13 @@ is_index: true
 
 <div class="section index-section">
     <h1 id="news" class="center to-underline">News</h1>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:10 %}
     <div id="news-div">
         <a href="{{ post.url }}">
             <div class="card-panel">
                 <h4>{{ post.title }}<i class="material-icons right">open_in_new</i></h4>
                 <span class="grey-text">{{ post.date | date: "%B %-d, %Y" }}</span>
-                <p class="black-text">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+                <p class="black-text">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
             </div>
         </a>
     </div>
