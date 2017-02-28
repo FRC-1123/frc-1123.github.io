@@ -105,6 +105,14 @@ main {
     }
 }
 
+form .input-field {
+    margin: 20px 0;
+}
+
+form button {
+    margin-bottom: 50px;
+}
+
 .post-content {
     font-family: "Lora", serif;
     font-size: 1.2rem;
