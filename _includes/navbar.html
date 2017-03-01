@@ -1,8 +1,10 @@
 <ul id="dropdown" class="dropdown-content">
     {% for the_page in site.pages %}
+    {% unless the_page.url contains 'page' %}
     {% if the_page.title %}
     <li><a class="light-blue-text text-accent-4" href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
     {% endif %}
+    {% endunless %}
     {% endfor %}
     <li><a class="light-blue-text text-accent-4" href="https://github.com/FRC-1123">GitHub</a></li>
 </ul>
@@ -12,9 +14,11 @@
             <a id="page-title" class="left white-text" href="{{ '/' | relative_url }}">AIM Robotics</a>
             <ul id="nav-mobile" class="right">
                 {% for the_page in site.pages %}
+                {% unless the_page.url contains 'page' %}
                 {% if the_page.title %}
                 <li class="hide-on-med-and-down {% if the_page.permalink == page.permalink %}active{% endif %}"><a href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
                 {% endif %}
+                {% endunless %}
                 {% endfor %}
                 <li class="hide-on-med-and-down"><a href="https://github.com/FRC-1123"><i class="fa fa-github"></i></a></li>
                 <li class="hide-on-large-only"><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons">arrow_drop_down</i></a></li>
