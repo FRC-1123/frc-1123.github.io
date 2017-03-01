@@ -6,11 +6,13 @@ baseurl: ""
 url: "https://frc-1123.github.io"
 #twitter_username: jekyllrb
 github_username:  frc-1123
+paginate: 5
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
