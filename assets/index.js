@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     var sr = ScrollReveal();
-    sr.reveal("#news-div .card-panel", {scale: "0.95"});
+    sr.reveal(".news-div .card-panel", {scale: "0.95"});
 
     var options = [
         {selector: "#news.to-underline", offset: 100, callback: underline},

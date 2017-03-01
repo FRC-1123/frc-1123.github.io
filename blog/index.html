@@ -1,0 +1,41 @@
+---
+title: Blog
+layout: default
+---
+
+
+<h1 class="center to-underline">Blog</h1>
+
+{% for post in paginator.posts %}
+<div class="news-div">
+    <a href="{{ post.url }}">
+        <div class="card-panel">
+            <h4>{{ post.title }}</h4>
+            <span class="grey-text">{{ post.date | date: "%B %-d, %Y" }}</span>
+            <p class="black-text">{{ post.excerpt | strip_html | truncatewords:40 }}</p>
+        </div>
+    </a>
+</div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination center">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <strong>{{ page }}</strong>
+    {% elsif page == 1 %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">&raquo;</a>
+    {% endif %}
+</div>
+{% endif %}
