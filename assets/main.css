@@ -146,8 +146,12 @@ form button {
     margin-top: 70px;
 }
 
-.prev-next-div i {
-    font-size: 3rem;
+.prev-next-div .btn-floating {
+    margin: 0 10%;
+}
+
+.prev-next-div .btn-floating i {
+    font-size: 2.5rem;
 }
 
 .footer-copyright {
