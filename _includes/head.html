@@ -3,7 +3,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>{{ site.title | escape }}{% if page.title %} &ndash; {{ page.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,4 +24,6 @@
     {% else %}
     <script type="text/javascript" src="{{ '/assets/main.js' | relative_url }}"></script>
     {% endif %}
+
+    {% seo title=false %}
 </head>
