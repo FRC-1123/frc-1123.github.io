@@ -16,7 +16,7 @@
                 {% for the_page in site.pages %}
                 {% unless the_page.url contains 'page' %}
                 {% if the_page.title %}
-                <li class="hide-on-med-and-down {% if the_page.permalink == page.permalink %}active{% endif %}"><a href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
+                <li class="hide-on-med-and-down{% if the_page.permalink and the_page.permalink == page.permalink %} active{% endif %}"><a href="{{ the_page.url | relative_url }}">{{ the_page.title | escape }}</a></li>
                 {% endif %}
                 {% endunless %}
                 {% endfor %}
