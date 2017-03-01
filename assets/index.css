@@ -133,7 +133,7 @@ main {
 }
 
 .underline:after {
-    width: 22rem !important;
+    width: 25rem !important;
     max-width: 90%;
     background-color: black !important;
 }

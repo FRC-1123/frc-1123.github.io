@@ -45,12 +45,12 @@ is_index: true
 <div class="divider"></div>
 
 <div class="section index-section">
-    <h1 id="news" class="center to-underline">News</h1>
+    <h1 id="news" class="center to-underline">Recent News</h1>
     {% for post in site.posts limit:5 %}
     <div class="news-div">
         <a href="{{ post.url }}">
             <div class="card-panel">
-                <h4>{{ post.title }}<i class="material-icons right">open_in_new</i></h4>
+                <h4>{{ post.title }}</h4>
                 <span class="grey-text">{{ post.date | date: "%B %-d, %Y" }}</span>
                 <p class="black-text">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
             </div>

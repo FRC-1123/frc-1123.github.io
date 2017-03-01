@@ -7,7 +7,7 @@ url: "https://frc-1123.github.io"
 #twitter_username: jekyllrb
 github_username:  frc-1123
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/news/page:num/"
 
 # Build settings
 markdown: kramdown
