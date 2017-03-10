@@ -4,7 +4,7 @@ body {
 }
 
 p {
-    line-height: 1.9;
+    line-height: 1.7;
 }
 
 .navbar-fixed {
@@ -139,7 +139,7 @@ form button {
 
 .post-content {
     font-family: "Lora", serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .prev-next-divider {
@@ -214,5 +214,8 @@ form button {
 @media only screen and (max-width: 600px) {
     .parallax-container {
         max-height: 60vw;
+    }
+    .post-content {
+        font-size: 1.2rem;
     }
 }
