@@ -10,8 +10,8 @@ $(document).ready(function() {
 
     $window = $(window);
     var height = Math.max($window.height(), $(".slider-text").height()+200);
-    $(".slider").height(height - 40);
-    $(".slider .slides").height(height - 40);
+    $(".slider").height(height - 50);
+    $(".slider .slides").height(height - 50);
 
 
     $navbar = $(".fade-color-nav");
