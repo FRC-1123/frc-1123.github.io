@@ -21,7 +21,7 @@ nav {
 }
 
 .navbar {
-    padding: 0 2%;
+    padding: 1px 2% 0 2%;
 }
 
 #nav-mobile > li > a {
@@ -185,7 +185,7 @@ main {
 }
 
 .footer-copyright {
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     line-height: 2;
 }
 
