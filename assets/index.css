@@ -52,8 +52,8 @@ nav {
 }
 
 .slider .slides li img {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
 }
 
 .slider-text {
